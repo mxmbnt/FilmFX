@@ -1,0 +1,223 @@
+.bouton{
+	-fx-background: transparent;
+}
+
+.AnchorPane{
+	-fx-background-color: #383838;
+}
+
+.Border-Pane{
+	-fx-background-color: #383838;
+}
+
+#bdFond{
+	-fx-background-color: #383838;
+}
+
+#btEditer, 
+#btNouveau, 
+#btAjout, 
+#btSupp,
+#btModif,
+#btSauvegarde,
+#btCherche{
+	-fx-background-color: #696868;
+	-fx-font-size: 14px;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #d8d8d8;
+    -fx-alignment: center-left;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-cursor: hand;
+    
+}
+
+#btEditer:hover, 
+#btNouveau:hover, 
+#btAjout:hover, 
+#btSupp:hover,
+#btModif:hover,
+#btSauvegarde:hover,
+#btCherche:hover {
+        -fx-background-color: #008728;
+        
+}
+
+
+#BtFerme{
+	-fx-background-color: transparent;
+}
+.table-view{
+    -fx-base: #2A2A2A;
+    -fx-control-inner-background: #2A2A2A;
+    -fx-background-color:transparent;
+    -fx-padding: 1;
+    -fx-selection-bar-non-focused: #008728 ;   
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: transparent transparent rgba(255,255,255,0.3) transparent;
+    -fx-border-width: 1;
+    -fx-background-insets: 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 25;
+    -fx-border-width: 0 0 0 0;
+    -fx-text-fill: #d8d8d8;
+}
+.table-view .column-header .label {
+    -fx-font-size: 13px;
+    -fx-font-weight:bold;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #d8d8d8;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-cell {
+    -fx-font-size: 14px;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #d8d8d8;
+    -fx-alignment: center-left;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #008728;
+}
+
+#Label {
+	-fx-font-size: 14px;
+	-fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+	-fx-alignment: center-left;
+	-fx-background-color: black;
+	
+}
+
+.text-field{
+	-fx-background-color:  #383838;
+	-fx-text-fill: white;
+	-fx-font-weight:bold;
+    -fx-font-size: 14;
+}
+
+
+.label {
+    -fx-text-fill: #d8d8d8;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    
+}
+
+#lbTitre{
+	-fx-font-weight: bold;
+	-fx-font-size: 32;
+	-fx-text-fill: #fff;
+}
+
+.slider:hover .thumb{
+	-fx-scale-x: 2;
+	-fx-scale-y: 2;
+}
+
+.slider:hover .track{
+	-fx-scale-y: 2;
+}
+
+#psField {
+	-fx-background-color: #fff;
+	-fx-text-fill: #222;
+}
+
+#tfLogin {
+	-fx-background-color: #fff;
+	-fx-text-fill: #222;
+}
+
+#vbBackground{
+	-fx-background-color:  #383838;
+}
+
+#btConnection{
+	-fx-background-color: #fff;
+	-fx-pref-height: 28px;
+    	-fx-pref-width: 88px;
+    	-fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    	-fx-text-fill: #222;
+        -fx-border-radius: 4px;
+    
+}
+
+#btConnection:hover {
+        -fx-background-color: #008728;
+        
+}
+#btLancement {
+	-fx-pref-height: 16px;
+    -fx-pref-width: 50px;
+    -fx-background-color: transparent;
+    -fx-border-radius: 70px;
+    -fx-cursor: hand;
+    
+}	
+	
+
+
+#frontTop{
+	-fx-background-color: #474747;
+}
+
+#lbErreur{
+	-fx-text-fill: red;
+}
+
+#tfFiltre{
+	-fx-background-color:  #fff;
+	-fx-text-fill: #222;
+	-fx-font-weight:bold;
+    	-fx-font-size: 14;
+}
+
+#btFermer{
+	-fx-background-color: transparent;
+	-fx-cursor: hand;
+	-fx-pref-height: 16px;
+    	-fx-pref-width: 16px;
+}
+
+#btFermer:hover{
+	-fx-background-color: #ff0000;
+}
+
+#lbLogin{
+	-fx-font-size: 35px;
+	-fx-text-fill: #fff;
+	
+}
+
+#btStop,
+#btPlay{
+	-fx-background-color: #696868;
+	-fx-font-size: 14px;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #d8d8d8;
+    -fx-alignment: center-left;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-cursor: hand;
+    -fx-pref-height: 24px;
+    -fx-pref-width: 24px;
+}
+
+#btStop:hover,
+#btbtPlay:hover{
+	-fx-background-color: #008728;
+}
+
+#mdPlayer{
+	-fx-pref-height: 1000px;
+    -fx-pref-width: 1000px;
+}
+

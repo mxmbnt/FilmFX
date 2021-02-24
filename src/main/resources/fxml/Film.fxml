@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="788.0" prefWidth="1004.0" style="-fx-background-color: #383838;" stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maxime.filmFX.application.FilmController">
+   <children>
+      <TableView fx:id="tabFilm" layoutX="87.0" layoutY="165.0" prefHeight="318.0" prefWidth="850.0" AnchorPane.rightAnchor="63.0">
+        <columns>
+          <TableColumn fx:id="cliD" prefWidth="41.0" text="iD" />
+          <TableColumn fx:id="clFilm" prefWidth="94.0" text="film" />
+            <TableColumn fx:id="clpaysSorti" prefWidth="165.0" text="paysSorti" />
+            <TableColumn fx:id="clsynopsi" prefWidth="277.0" text="synopsi" />
+            <TableColumn fx:id="clFichier" minWidth="0.0" prefWidth="180.0" text="fichier" />
+            <TableColumn fx:id="clImage" prefWidth="175.0" text="Image" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="104.0" layoutY="490.0" prefHeight="284.0" prefWidth="597.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="61.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="118.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="30.0" text="iD:" textFill="WHITE">
+               <font>
+                  <Font name="Eras Bold ITC" size="48.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfiD" prefHeight="49.0" prefWidth="152.0" GridPane.columnIndex="1" />
+            <Label text="film: " textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bauhaus 93" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfFilm" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="73.0" text="paysSorti:" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfpaysSorti" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="synopsi:" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfSynopsi" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="fichier:" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfFichier" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tfCherche" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Image:" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Eras Bold ITC" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <VBox layoutX="745.0" layoutY="501.0" prefHeight="199.0" prefWidth="128.0">
+         <children>
+            <Button fx:id="btEditer" mnemonicParsing="false" onAction="#editer" prefHeight="50.0" prefWidth="47.0" text="Editer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <HBox prefHeight="32.0" prefWidth="202.0">
+               <children>
+                  <Button fx:id="btNouveau" mnemonicParsing="false" onAction="#nouveau" prefHeight="28.0" prefWidth="42.0" text="Nouveau" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btAjout" mnemonicParsing="false" onAction="#ajouter" prefHeight="28.0" prefWidth="35.0" text="Ajouter" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="btSupp" mnemonicParsing="false" onAction="#supprimer" prefHeight="28.0" prefWidth="43.0" text="Supprimer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btModif" mnemonicParsing="false" onAction="#modifier" prefHeight="28.0" prefWidth="43.0" text="Modifier" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btCherche" mnemonicParsing="false" onAction="#chercher" text="...." textFill="WHITE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="frontTop" layoutY="-2.0" prefHeight="71.0" prefWidth="1004.0">
+         <children>
+            <Label fx:id="lbTitre" layoutX="409.0" layoutY="11.0" prefHeight="50.0" prefWidth="187.0" text="Galerie Film" textFill="WHITE">
+               <font>
+                  <Font name="Eras Bold ITC" size="39.0" />
+               </font>
+            </Label>
+            <Button fx:id="btFermer" layoutX="971.0" layoutY="2.0" mnemonicParsing="false" onAction="#BoutonFermer" prefHeight="33.0" prefWidth="30.0" stylesheets="@../css/application.css" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="20.0" layoutY="115.0" prefHeight="50.0" prefWidth="923.0">
+         <children>
+            <Label text="Chercher :">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="tfFiltre" alignment="CENTER" layoutX="135.0" layoutY="121.0" prefHeight="30.0" prefWidth="802.0" style="-fx-background-color: #fff;" />
+            <Button fx:id="btLancement" mnemonicParsing="false" onAction="#lancement" prefHeight="56.0" prefWidth="72.0" text="Lancement">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

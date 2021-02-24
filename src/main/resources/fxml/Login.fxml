@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="371.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.maxime.filmFX.application.LoginController">
+   <center>
+      <AnchorPane>
+         <children>
+            <VBox fx:id="vbBackground" prefHeight="371.0" prefWidth="450.0" stylesheets="@../css/application.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbLogin" text="Login">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="180.0" right="50.0" top="80.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="tfLogin" alignment="TOP_CENTER">
+                     <VBox.margin>
+                        <Insets left="120.0" right="120.0" top="50.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="psField">
+                     <VBox.margin>
+                        <Insets left="120.0" right="120.0" top="15.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="btConnection" mnemonicParsing="false" onAction="#connection" prefHeight="30.0" prefWidth="61.0" text="Connexion">
+                     <VBox.margin>
+                        <Insets left="180.0" top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lbErreur" prefHeight="20.0" prefWidth="129.0">
+                     <VBox.margin>
+                        <Insets left="155.0" top="50.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Pane prefHeight="25.0" prefWidth="450.0">
+               <children>
+                  <Button fx:id="btFermer" alignment="BOTTOM_CENTER" layoutX="418.0" mnemonicParsing="false" onAction="#BoutonFermer" prefHeight="24.0" prefWidth="19.0" stylesheets="@../css/application.css" text="Fermer" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
